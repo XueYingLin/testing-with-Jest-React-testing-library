@@ -24,6 +24,7 @@ it("render button correctly", () => {
 
 //snapshot testing 
 //npm install react-test-renderer
+//folder "_snapshots_" and file "button.test.js.snap"  are created automaticly
 it("matches snapshot", () => {
     const tree = renderer.create(<Button label="save"></Button>).toJSON();
     expect(tree).toMatchSnapshot();
